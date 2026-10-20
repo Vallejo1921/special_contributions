@@ -12,3 +12,8 @@ A summary of contributions by Vallejo1921 in October 2026:
 - Prevents nondeterministic certificate IDs and canonical vote ordering discrepancies across validator nodes.
 - Merged into `development` by the Tari team.
 - This contribution is tracked by `tari-project/special_contributions#259`.
+- Contributed an indexer fix to `tari-ootle` in [tari-project/tari-ootle#2913](https://github.com/tari-project/tari-ootle/pull/2913).
+- The fix verifies the template address against its published binary hash at the network boundary before caching in `tari_indexer_lib`, discarding responses from Byzantine validator nodes and querying honest members.
+- Prevents cache poisoning and address spoofing for published WASM templates.
+- Merged into `development` by the Tari team.
+- This contribution is tracked by `tari-project/special_contributions#242`.
