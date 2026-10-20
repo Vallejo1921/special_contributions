@@ -17,3 +17,9 @@ A summary of contributions by Vallejo1921 in October 2026:
 - Prevents cache poisoning and address spoofing for published WASM templates.
 - Merged into `development` by the Tari team.
 - This contribution is tracked by `tari-project/special_contributions#242`.
+- Contributed a networking fix to `tari-ootle` in [tari-project/tari-ootle#2914](https://github.com/tari-project/tari-ootle/pull/2914).
+- The fix enforces cryptographic signature verification on signed peer records and rejects future-skewed timestamps before caching them in `libp2p-peersync`.
+- Prevents malicious or unauthenticated peers from poisoning the peer store or eclipsing routing tables.
+- Merged into `development` by the Tari team.
+- This contribution is tracked by `tari-project/special_contributions#270`.
+
